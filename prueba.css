@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo
+{
+    background-image: url("https://ak.picdn.net/shutterstock/videos/1057414678/thumb/1.jpg");
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    position: fixed;
+}
+
+
+/* MENU superior */
+.cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+
+.cabecera > div {
+    width: 70px;
+    height: 40px;
+    padding: 10px;
+}
+
+.cabecera > div:hover { /* esto es lo que añado al :hover */
+    background-color:rgb(255, 0, 0) ;
+    color: seashell;
+}
+
+.option {
+    float: left;
+}
+
+.cart {
+    float: right;
+}
+
+/* MENU lateral */
+.menu {
+    top: 600px;
+    width: 30vw;
+    height:60vh;
+    position: absolute;
+    z-index: -10;
+    background-color:rgb(255, 0, 0);
+}
+.fcc-btn {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-decoration:wavy;
+  }
+/* USO de grids */
+.caja1 {
+    margin:auto;
+    top: 30vh;
+    left:30vw;
+    background-color: rgb(255, 71, 71);
+    position: absolute;
+    z-index: -10;
+    
+} 
+
+
+  
+  .imagen { 
+    top: 30px;
+    left:30px;
+    grid-area: imagen; 
+      background-color: rgb(255, 255, 255); 
+    }
+  
+  .caracteristicas { grid-area: caracteristicas; background-color: rgb(255, 0, 0);}
+  
+  .descripcion { grid-area: descripcion; background-color: rgb(0, 0, 0);}
+  
+
+/* MENU inferior */
+.footer {
+    top: 200vh;
+    left:0vw;
+    background-color: rgb(202, 215, 226);
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+  }
